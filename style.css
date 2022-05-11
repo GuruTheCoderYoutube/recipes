@@ -1,0 +1,127 @@
+/* Importing required fonts: */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=PT+Sans&family=Roboto+Mono:wght@300;400;500&display=swap");
+
+/* Simple CSS Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  background-color: #f5f5f5;
+  text-rendering: optimizeLegibility;
+}
+* {
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:root {
+  --dark-primary: #098d02;
+  --light-primary: #23c686;
+}
+#introduction {
+  height: 100vh;
+}
+.headingContainer {
+  width: 100%;
+  text-align: center;
+}
+.heading {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+  display: inline-block;
+  cursor: pointer;
+}
+.heading::after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.3rem var(--light-primary);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.heading:hover::after {
+  transform: scaleX(1);
+}
+.centerContent {
+  width: 100%;
+  margin: 0;
+}
+hr.divider {
+  height: 0.001px;
+  color: #fafafa;
+}
+
+.foodImg {
+  width: 50%;
+  height: auto;
+  /* Centering the image: */
+  display: block;
+  margin: 0 auto;
+}
+.introContainer {
+  margin: 0 auto;
+  width: 55%;
+}
+.intro {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.subheading {
+  color: var(--dark-primary);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.listItems {
+  width: fit-content;
+  margin: 0 auto;
+}
+.listItems li {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+#content {
+  margin-bottom: 2rem;
+}
+.home {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: auto auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--dark-primary);
+}
+a:visited {
+  color: var(--dark-primary);
+}
+a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.3rem var(--light-primary);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+footer {
+  height: 5rem;
+  width: 100%;
+}
