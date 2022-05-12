@@ -1,26 +1,49 @@
 /* Importing required fonts: */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=PT+Sans&family=Roboto+Mono:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans&display=swap');
 
+:root {
+  --dark-primary: #098d02;
+  --light-primary: #19df90;
+  --font-color:#3a3b3c;
+  --background-color:#fafafa;
+}
 /* Simple CSS Reset */
 html,
 body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  background-color: #f5f5f5;
+  background-color: var(--background-color);
+  color: var(--font-color);
   text-rendering: optimizeLegibility;
 }
 * {
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
 }
 
-:root {
-  --dark-primary: #098d02;
-  --light-primary: #23c686;
+.companyNameContainer {
+    width:100%;
+    text-align: center;
 }
+
+#companyName {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size:4rem;
+    animation:backInDown;
+    animation-duration:2s;
+    font-weight:700;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color:var(--dark-primary);
+}
+
 #introduction {
   height: 100vh;
 }
@@ -38,14 +61,14 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-.heading::after {
+#companyName::after {
   display: block;
   content: "";
   border-bottom: solid 0.3rem var(--light-primary);
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-.heading:hover::after {
+#companyName:hover::after {
   transform: scaleX(1);
 }
 .centerContent {
@@ -83,6 +106,9 @@ hr.divider {
   text-align: center;
   margin-top: 2.5rem;
 }
+.notGreen {
+    color: var(--font-color);
+}
 .listItems {
   width: fit-content;
   margin: 0 auto;
@@ -105,10 +131,10 @@ hr.divider {
 a {
   display: inline-block;
   text-decoration: none;
-  color: var(--dark-primary);
+  color: var(--font-color);
 }
 a:visited {
-  color: var(--dark-primary);
+  color: var(--font-color)
 }
 a::after {
   display: block;
@@ -125,3 +151,8 @@ footer {
   height: 5rem;
   width: 100%;
 }
+
+.listItems .listItem {
+    font-size:1.3rem;
+}
+
