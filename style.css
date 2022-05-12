@@ -6,7 +6,10 @@
   --dark-primary: #098d02;
   --light-primary: #19df90;
   --font-color:#3a3b3c;
-  --background-color:#fafafa;
+  --font-color-dark:#18191A;
+
+  /* I increased the value of the green background to make it look more green and match with the vibe of the website(green and another, darker shade of green) and it worked freaking perfectly. I legit feel like leonardo Da Vinci.   */
+  --background-color:rgb(250, 255, 250);
 }
 /* Simple CSS Reset */
 html,
@@ -77,7 +80,7 @@ body {
 }
 hr.divider {
   height: 0.001px;
-  color: #fafafa;
+  color: var(--light-primary);
 }
 
 .foodImg {
@@ -99,12 +102,13 @@ hr.divider {
   margin-bottom: 1.5rem;
 }
 .subheading {
-  color: var(--dark-primary);
+  /* color: var(--dark-primary); */
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;
   margin-top: 2.5rem;
+  color:var(--font-color-dark);
 }
 .notGreen {
     color: var(--font-color);
