@@ -10,7 +10,14 @@
   --font-color-dark: #18191a;
 
   /* I increased the value of the green background to make it look more green and match with the vibe of the website(green and another, darker shade of green) and it worked freaking perfectly. I legit feel like leonardo Da Vinci.   */
-  --background-color: rgb(250, 255, 250);
+  /* --background-color: rgb(250, 255, 250); */
+
+  /* Made it better: */
+  
+  /* Choose one: */
+  --background-color: #edfded; /* More green */
+  --background-color:#ecf7eb; /* Less green */
+
 }
 /* Simple CSS Reset */
 html,
@@ -163,7 +170,7 @@ hr.divider {
   margin: auto auto;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  outline: 0.175rem solid var(--light-primary);
+  outline: 0.15rem solid var(--secondary-color);
   padding: 0.2rem 2rem;
   transition: background-color 0.2s ease-in-out;
   display: inline-block;
