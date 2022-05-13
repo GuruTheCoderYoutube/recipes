@@ -48,7 +48,7 @@ body {
   text-align: center;
   font-size: 4rem;
   animation: backInDown;
-  animation-duration: 2s;
+  animation-duration: 1s;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -186,6 +186,11 @@ hr.divider {
   background-color: var(--light-primary);
 }
 
+main {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -224,4 +229,8 @@ footer {
 }
 .recipeItems .listItem {
   font-weight: 300;
+}
+
+main .subheading {
+  font-weight:400;
 }
