@@ -1,8 +1,8 @@
 /* Importing required fonts: */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=PT+Sans&family=Roboto+Mono:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
 
 :root {
   --dark-primary: #098d02;
@@ -15,11 +15,10 @@
   /* --background-color: rgb(250, 255, 250); */
 
   /* Made it better: */
-  
+
   /* Choose one: */
   /* --background-color: #edfded; More green */
-  --background-color:#ecf7eb; /* Less green */
-
+  --background-color: #ecf7eb; /* Less green */
 }
 /* Simple CSS Reset */
 html,
@@ -71,8 +70,8 @@ body {
   padding: 0;
   text-align: center;
   /* font-family: "Roboto Mono", monospace; */
-  font-family: 'Roboto Mono', sans-serif;
-  font-weight:700;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
   font-size: 3.5em;
   display: inline-block;
   cursor: pointer;
@@ -151,8 +150,8 @@ hr.divider {
 }
 
 .subheadingContainer {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .yellowUnderline::after {
@@ -175,7 +174,7 @@ hr.divider {
   margin-top: 1rem;
   margin-bottom: 3rem;
   outline: 0.15rem solid var(--secondary-color);
-  padding: 0.2rem 2rem;
+  padding: 0.22rem 2.4rem;
   transition: background-color 0.2s ease-in-out;
   display: inline-block;
   color: var(--font-color-dark);
@@ -224,5 +223,5 @@ footer {
   font-size: 1.3rem;
 }
 .recipeItems .listItem {
-  font-weight:300;
+  font-weight: 300;
 }
