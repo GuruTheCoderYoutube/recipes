@@ -7,7 +7,8 @@
 :root {
   --dark-primary: #098d02;
   --light-primary: #19df90;
-  --secondary-color: #ff9100;
+  --secondary-color: rgb(255, 135, 0);
+  /* --secondary-color:#FFAC1C; */
   --font-color: #3a3b3c;
   --font-color-dark: #18191a;
 
@@ -15,10 +16,10 @@
   /* --background-color: rgb(250, 255, 250); */
 
   /* Made it better: */
-
-  /* Choose one: */
   /* --background-color: #edfded; More green */
-  --background-color: #ecf7eb; /* Less green */
+  /* Less green: */
+  --background-color: #ecf7eb; 
+
 }
 /* Simple CSS Reset */
 html,
