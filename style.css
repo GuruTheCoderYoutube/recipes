@@ -223,3 +223,6 @@ footer {
 .listItems .listItem {
   font-size: 1.3rem;
 }
+.recipeItems .listItem {
+  font-weight:300;
+}
